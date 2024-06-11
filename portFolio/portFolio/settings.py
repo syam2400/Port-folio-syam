@@ -96,11 +96,16 @@ EMAIL_HOST_PASSWORD = 'dxgc xhzp sbuw kzte'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'aGHyEBPhTAVovjQSDYcbddgiznzPnZZs',
-        'HOST': 'viaduct.proxy.rlwy.net',
-        'PORT': '51939',
+        'NAME': 'verceldb',
+        'USER': 'default',
+        'PASSWORD': 'usNU7YSkDcG9',
+        'HOST': 'ep-orange-lab-a4vbd2ow-pooler.us-east-1.aws.neon.tech',
+        'PORT': '5432',
+        'POSTGRES_URL':"postgres://default:usNU7YSkDcG9@ep-orange-lab-a4vbd2ow-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
+        'POSTGRES_PRISMA_URL':"postgres://default:usNU7YSkDcG9@ep-orange-lab-a4vbd2ow-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15",
+        'POSTGRES_URL_NO_SSL':"postgres://default:usNU7YSkDcG9@ep-orange-lab-a4vbd2ow-pooler.us-east-1.aws.neon.tech:5432/verceldb",
+        'POSTGRES_URL_NON_POOLING':"postgres://default:usNU7YSkDcG9@ep-orange-lab-a4vbd2ow.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
+
     }
 }
 
