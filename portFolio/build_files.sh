@@ -1,5 +1,5 @@
 python3.9 -m venv venv
-pip3 install psycopg2
+
 # Activate the virtual environment
 source venv/bin/activate
 
