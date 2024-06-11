@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>PortFolio </title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'asset/page/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'asset/page/favicon-16x16.png' %}">
+    <link rel="shortcut icon" href="{% static 'asset/page/favicon.ico' %}">
+    <!-- metatag -->
+   
+    <!-- main style -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <!-- responsive style -->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="headermain">
+        <div class="container">
+            <div class="row headerwrap">
+                <div class="col-xs-12 col-md-12 col-lg-2">
+                    <!-- wrap logo -->
+                    <div class="headerwrap__logo">
+                  
+                    </div>
+                    <!-- end wrap logo -->
+                    <!-- navigation icon  -->
+                    <div class="navicon d-block d-lg-none">
+                        <div class="navicon__bar"></div>
+                    </div>
+                    <!-- end navigation icon  -->
+                </div>
+                <div class="col-lg-10 text-xl-left d-none d-lg-block justify-content-lg-left justify-content-xl-left">
+                    <!-- navigation desktop -->
+                    <nav class="navpage text-left">
+                        <ul class="navpage__wrap">
+                            <li class="navpage__list"><a href="#sectionhero" class="activelink">Intro.</a></li>
+                            <li class="navpage__list"><a href="#aboutsection">About Me.</a></li>
+                            <li class="navpage__list"><a href="#servicesection">Skills.</a></li>
+                            <li class="navpage__list"><a href="#portfoliosection">Projects.</a></li>
+                            <li class="navpage__list"><a href="#contactsection">Contact.</a></li>
+                        </ul>
+                    </nav>
+                    <!-- end navigation desktop -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- mobile nav -->
+    <div class="overlay">
+        <div class="overlay__navigation">
+            <ul class="overlay__listnav">
+                <li class="navpage__list"><a href="#herosection">Intro.</a></li>
+                <li><a href="#aboutsection">About Me.</a></li>
+                <li><a href="#servicesection">Skills.</a></li>
+                <li><a href="#portfoliosection">Projects.</a></li>
+                <li><a href="#contactsection">Contact.</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end mobile nav -->
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="preloader__img">
+            <h1  class="preloader__text">Welcome To My Personal Website</h1>
+        </div>
+    </div>
+    <!-- main wrap -->
+    <main id="mainwrap">
+        <!-- section hero -->
+        <div id="sectionhero" class="sectionblock">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 pr-0 mr-0 pl-lg-0 pr-lg-5 mr-lg-0 mt-3 mt-lg-0 align-items-center justify-content-center align-items-lg-left justify-content-lg-left text-center text-lg-left d-flex order-1 order-lg-0 ">
+                        <div class="infohero ">
+                            <p class="infohero__p">Hello, i'm</p>
+                            <h1 class="infohero__title">SYAM
+                                <span>PRASAD</span>
+                            </h1>
+                            <span id="typed-text"></span>
+                            <span class="cursor blink">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center order-0 order-lg-1 mb-5 mb-lg-0">
+                        <div class="heroimg ">
+                            <img src="{% static 'asset/output_image.jpeg' %}" alt="poto" class="img-fluid heroimg__poto" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                
+                <path fill="#ffffff" fill-opacity="1" d="M0,128L60,149.3C120,171,240,213,360,192C480,171,600,85,720,85.3C840,85,960,171,1080,197.3C1200,224,1320,192,1380,176L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+              </svg>
+        </div>
+        <!-- end section hero -->
+        <!-- about section -->
+        <div id="aboutsection" class="sectionblock">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 text-center text-lg-left">
+                        <div class="abouthero">
+                            <h3>SYAM PRASAD</h3>
+                            <img src="{% static 'asset/output_image.jpeg' %}"  alt="poto" class="img-fluid heroimg__poto" />
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4 text-center text-lg-left">
+                        
+                            <img src="{% static 'asset/output_image.jpeg' %}" alt="poto" class="img-fluid heroimg__poto" />
+                       
+                    </div> -->
+                    <div class="col-lg-8 pl-lg-5 text-center text-lg-left">
+                        <div class="infoabout">
+                            <p class="infoabout__title">
+                                With a solid background in Python and Django, I am Syamprasad, an enthusiastic developer passionate about leveraging my skills to create impactful software solutions. I recently completed an internship at Luminar Technohub, Kakanad, where I honed my technical abilities and gained valuable industry experience. I am eager to explore future opportunities that align with my expertise and drive for innovation.
+                              </p>
+                            <div class="row  text-center text-lg-left">
+                                <div class="col-lg-6">
+                                    <ul class="infoabout__list">
+                                        <li>
+                                            <div class="infoabout__wrap">
+                                                <span class="mt-4 mb-2 d-block infoabout__title">FULL NAME</span>
+                                                <p>
+                                                    SYAMPRASAD SHAJI
+                                                </p>
+                                            </div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="infoabout__wrap">
+                                                <span class="mt-4 mb-2 d-block infoabout__title">PROFESSIONAL EXPERIENCE</span>
+                                                
+                                                <h5> PYTHON, DJANGO - FULL STACK WEB DEVELOPER INTERN</h5>
+                                                <p>Luminar Technohub Kakkand , Kochi, Kerala  | 16/10/2023 - 18/04/2024</p>
+
+                                               
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="infoabout__wrap">
+                                                <span class="mt-4 mb-2 d-block infoabout__title">COURSES</span>
+                                                
+                                                <h5> Python,Django-Angular FullStack web development</h5>
+                                                <p>Luminar Technolab (Software Training Institute) - Kochi, Kerala | 03/2023-09/2023</p>
+
+                                               
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="infoabout__wrap">
+                                                <span class="mt-4 mb-2 d-block infoabout__title">EDUCATION</span>
+                                                
+                                                <h5> Bsc.Physics </h5>
+                                                <p>Unions Christian College -Aluva, Kerala - 07/2018 - 03/2023</p>
+
+                                               
+                                            </div>
+                                        </li>
+
+                                       
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="infoabout__list">
+
+                                        <li>
+                                            <div class="infoabout__wrap">
+                                                <span class="mt-4 mb-2 d-block infoabout__title">EMAIL ADDRESS</span>
+                                                <p>
+                                                    syam2400@gmail.com
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="infoabout__wrap">
+                                                <span class="mt-4 mb-2 d-block infoabout__title">LinkedIn</span>
+                                                <p>
+                                                  <a href="https://www.linkedin.com/in/syam-prasad-/">Linkedin Profile</a>  
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infoabout__wrap">
+                                                <span class="mt-4 mb-2 d-block infoabout__title">GitHub</span>
+                                                <p>
+                                                  <a href="https://github.com/syam2400">GitHub Profile</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="infoabout__wrap">
+                                                <span class="mt-4 mb-2 d-block infoabout__title">Address</span>
+                                                <p>
+                                                    Al khail heights - Dubai
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="infoabout__wrap">
+                                                <span class="mt-4 mb-2 d-block infoabout__title">PHONE NUMBER</span>
+                                                <p>
+                                                    +971 52 737 5615 
+                                                </p>
+                                                <p>
+                                                    +91 9061439883
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <a href="{% static 'asset/SYAMPRASAD-PYTHON-DEV-RESUME.pdf' %}" class="btn linkbtn aboutlink mt-4">
+                                    Download Cv
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+
+        </div>
+        <!-- end about -->
+        <!-- service section -->
+        <div id="servicesection" class="sectionblock">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,186.7C480,192,600,160,720,138.7C840,117,960,107,1080,117.3C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+              </svg>
+            <div class="container">
+                <h1 style="display: flex;align-items: center;justify-content: center;margin-bottom: 30px;">SKILLS</h1>
+                <div class="row">
+                  
+                    <div class="col-lg-12">
+                        <div class="container-icons">
+                            <div class="item">
+                                <img src="{% static 'asset/hero/python.svg' %}" alt="" style="height: 100px;width: 100px;">
+                                <p>Python.</p>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'asset/hero/django.svg' %}" alt="" style="height: 100px;width: 100px;">
+                                <p>Django</p>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'asset/hero/Django REST.svg' %}" alt="" style="height: 100px;width: 100px;">
+                                <p>Django-RestFramework.</p>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'asset/hero/coding.svg' %}" alt="" style="height: 100px;width: 100px;">
+                                <p>Html,css,js</p>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'asset/hero/bootstrap.svg' %}" alt="" style="height: 100px;width: 100px;">
+                             
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'asset/hero/api-program.svg' %}" alt="" style="height: 100px;width: 100px;">
+                             
+                                <p>Api</p>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'asset/hero/database.svg' %}" alt="" style="height: 100px;width: 100px;">
+                             
+                                <p>Sql</p>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'asset/hero/git.svg' %}" alt="" style="height: 100px;width: 100px;">
+                             
+                                <p>Git</p>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'asset/hero/github.svg' %}" alt="" style="height: 100px;width: 100px;">
+                             
+                                <p>GitHub</p>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'asset/hero/docker.svg' %}" alt="" style="height: 100px;width: 100px;">
+                             
+                                <p>Docker</p>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'asset/hero/vs-code.svg' %}" alt="" style="height: 100px;width: 100px;">
+                             
+                                <p>vs-code</p>
+                            </div>
+                            
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,197.3C480,213,600,203,720,186.7C840,171,960,149,1080,160C1200,171,1320,213,1380,234.7L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </div>
+        <!-- end service section -->
+        <!-- portfolio section -->
+        <div id="portfoliosection" class="sectionblock">
+            <div class="container">
+                <h1 style="display: flex;align-items: center;justify-content: center;margin-bottom: 20px;">PROJECTS</h1>
+                     
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- filter portfolio -->
+                        <div class="warpfilter text-left">
+                            <ul id="filterwrap" class="warpfilter__filter justify-content-left text-center text-lg-left">
+                                <li data-group="all" class="active">All</li>
+                                
+                            </ul>
+                        </div>
+                        <!-- end filter portfolio -->
+                        
+                        <div class="container-projects">
+                            <div class="media-box">
+                                <div class="carousel">
+                                    <div class="carousel-images">
+                                        <img src="{% static 'asset/project-images/bankapi-1.png' %}" alt="Image Description1">     
+                                        <img src="{% static 'asset/project-images/bankapi-2.png' %}" alt="Image Description 2">
+                                        <img src="{% static 'asset/project-images/bankapi-3.png' %}" alt="Image Description 3">
+                                        <img src="{% static 'asset/project-images/bankapi-4.png' %}" alt="Image Description 4">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <a style="text-decoration: none;color: black;" href="https://github.com/syam2400/banking-application.git" class="link">Banking-Api</a>
+                            </div>
+
+                            <div class="media-box">
+                                <iframe class="video" src="https://www.youtube.com/embed/3uR09d8xcKM?si=2izzUAy6bXZOKp__" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                <a style="text-decoration: none;color: black;" href="https://github.com/syam2400/gym-management-application.git">Gym-Management-Application</a>
+                            </div>
+
+                            <div class="media-box">
+                                <div class="carousel">
+                                    <div class="carousel-images">
+                                        <img src="{% static 'asset/project-images/ecom-1.png' %}" alt="Image Description1">     
+                                        <img src="{% static 'asset/project-images/ecom-2.png' %}" alt="Image Description2">  
+                                        <img src="{% static 'asset/project-images/ecom-3.png' %}" alt="Image Description3">  
+                                        <img src="{% static 'asset/project-images/ecom-4.png' %}" alt="Image Description4">  
+                                        <img src="{% static 'asset/project-images/ecom-5.png' %}" alt="Image Description5">  
+                                        <img src="{% static 'asset/project-images/ecom-6.png' %}" alt="Image Description6">  
+                                        <img src="{% static 'asset/project-images/ecom-7.png' %}" alt="Image Description7">  
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <a style="text-decoration: none;color: black;" href="https://github.com/syam2400/ecommerce-website-django" class="link">Ecommerce-Website</a>        
+                            
+                            </div>
+
+                            <div class="media-box">
+                                <iframe class="video" src="https://www.youtube.com/embed/RDcKw6C863Q?si=Q-OlrT3oOXRap3Nl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               
+                                <a style="text-decoration: none;color: black;" href="https://github.com/syam2400/Fog-Detection-ML-Django.git">Fog-Detection-Project</a>
+                            </div>
+
+                            <div class="media-box">
+                                <div class="carousel">
+                                    <div class="carousel-images">
+                                        <img src="{% static 'asset/project-images/meter.png' %}" alt="Image Description1">     
+                                         
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <a style="text-decoration: none;color: black;" href="https://github.com/syam2400/MeterForcasting.git" class="link">Smart-Meter-Forecasting</a>        
+                            
+                            </div>
+
+                        </div>
+                           
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end portfolio section -->
+        <!-- contact section -->
+        <div id="contactsection" class="sectionblock">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,186.7C480,192,600,160,720,138.7C840,117,960,107,1080,117.3C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+              </svg>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 pr-lg-5">
+                        <div class="contactdetail">
+                            <h3 class="contactdetail__title mb-4">
+                                Let's get intouch
+                            </h3>
+                            <p>Start a conversation. Fill out the form below and let's collaborate!.</p>
+                            <ul class="contactdetail__list">
+                                <li>
+                                    <span class="contactdetail__span">
+                                        * Al khail heights - Dubai ,
+                                       
+                                     </span>
+                                     <!-- <div>
+                                        * Menamcheriyil house no-143  ,      kondotty(683571),Aluva,Ernakulam,Kerala,India
+                                     </div> -->
+                                </li>
+                                <li>
+                                    <span class="contactdetail__span">
+                                        * +971 52 737 5615,
+                                        
+                                    </span>
+                                    <div>
+                                        
+                                        * +91 9061439883
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="contactdetail__span">
+                                        syam2400@gmail.com
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="contactdetail__sosmed">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/syam2400">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contactform">
+                            <!-- form contact -->
+                            <form  method="post" id="formcontact" class="contactform">
+                                {% csrf_token %}
+                                <!-- input contact wrap -->
+                                <div class="contactform__form-group row">
+                                    {% if message %}
+                                    <h4>{{message}}</h4>
+                                    {% endif %}
+                                    <div class="col-lg-12 pt-4">
+                                        <label for="yourname" class="pb-2 ">Input your name</label>
+                                        <input type="text" id="yourname" class="contactform__inputtext input-control " placeholder="Your name" name="name" required data-name="name" />
+                                    </div>
+                                    <!-- input contact wrap -->
+                                    <div class="col-lg-12 pt-4">
+                                        <label for="yourmail" class="pb-2 ">Input your mail</label>
+                                        <input type="email" id="yourmail" class="contactform__inputtext input-control " placeholder="Your email address" name="email" required data-name="email" />
+                                    </div>
+                                    <!-- input contact wrap -->
+                                    <div class="col-lg-12 pt-4">
+                                        <label for="comment" class="pb-2">Input your message</label>
+                                        <textarea class="contactform__comentarea input-control" id="comment" placeholder="Your comment" name="comment" data-name="comment" required></textarea>
+                                        <button id="submitbutton" class="btn mt-5  contactform__submitbuton linkbtn mt-5 mb-3" type="submit">Submit now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end contact section -->
+    </main>
+    <!-- end main wrap -->
+    <!-- footer section -->
+    <footer id="footerwrap" class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center footwrap">
+                    <p><b>Personal-Website</b> <span class="years"> </span> BY Syamprasad</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section-->
+    <!-- keen slider -->
+    <script src="{% static 'javascript/vendor/keen-slider.js' %}"></script>
+    <!-- glightbox -->
+    <script src="{% static 'javascript/vendor/glightbox.js' %}"></script>
+    <!-- shufle -->
+    <script src="{% static 'javascript/vendor/shufle.js' %}"></script>
+    <!-- script -->
+    <script src="{% static 'javascript/main.js' %}"></script>
+</body>
+
+</html>
