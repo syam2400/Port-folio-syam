@@ -4,11 +4,9 @@ charset-normalizer==3.1.0
 Django==4.2.9
 git-filter-repo==2.38.0
 idna==3.4
-psycopg2-binary==2.9.7
-psycopg2>=2.7,<2.8 --no-binary psycopg2
-psycopg-binary==3.1.19
-psycopg2==2.9.9
-psycopg2-binary==2.9.7
+psycopg2-binary
+
+
 requests==2.31.0
 sqlparse==0.4.4
 typing_extensions==4.12.0
