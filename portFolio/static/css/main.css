@@ -784,11 +784,64 @@ Filename      : main.css
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 
 .enlarged-image img {
     max-width: 90%;
     max-height: 90%;
+}
+
+.enlarged-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enlarged-close-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.enlarged-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enlarged-nav-prev {
+    left: 14px;
+}
+
+.enlarged-nav-next {
+    right: 14px;
+}
+
+.enlarged-nav-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
 }
 
 

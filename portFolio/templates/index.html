@@ -58,7 +58,7 @@
     <div class="overlay">
         <div class="overlay__navigation">
             <ul class="overlay__listnav">
-                <li class="navpage__list"><a href="#herosection">Intro.</a></li>
+                <li class="navpage__list"><a href="#sectionhero">Intro.</a></li>
                 <li><a href="#aboutsection">About Me.</a></li>
                 <li><a href="#servicesection">Skills.</a></li>
                 <li><a href="#portfoliosection">Projects.</a></li>
@@ -125,18 +125,18 @@
                     <div class="col-lg-8 pl-lg-5 text-center text-lg-left">
                         <div class="infoabout">
                             <p class="infoabout__title">
-                                Full Stack Developer with 1.5+ years of experience building scalable and
-                                production-ready web applications using React.js, Node.js, NestJS, and MongoDB.
-                                Experienced in developing modern frontend interfaces, designing RESTful APIs, and
-                                maintaining backend services for SaaS platforms such as the EduHealth school healthcare
-                                system. Skilled in implementing reusable UI components, optimizing application
-                                performance, and resolving production issues in live environments.
+                                Full Stack Developer with 1.5+ years of experience delivering scalable, production-ready
+                                web applications. At Nuvento, contributed to EduHealth — a live school healthcare
+                                platform
+                                built on a microservices architecture with gRPC — and Plydish — a student record
+                                tracking
+                                dashboard — working across frontend (React, Next.js) and backend (NestJS, Node.js,
+                                MongoDB).
 
-                                Proficient in TypeScript, JavaScript, and Python, with hands-on experience in Django and
-                                Django REST Framework. Comfortable working in Agile development environments,
-                                collaborating with cross-functional teams, and managing development workflows using Git
-                                and Azure DevOps. Passionate about building efficient, scalable software solutions that
-                                improve user experience and system reliability.
+                                <br><br>Proficient in TypeScript, JavaScript, and Python (Django), with proven
+                                experience in
+                                REST API design, microservices, and legacy system modernization. Experienced in Agile
+                                environments with a strong understanding of DevOps practices using Git and Azure DevOps.
                             </p>
                             <div class="row  text-center text-lg-left">
                                 <div class="col-lg-6">
@@ -156,11 +156,13 @@
                                                     EXPERIENCE</span>
                                                 <h5>Associate Full Stack Developer</h5>
                                                 <p>Nuvento - Transasia Cyber Park, Infopark Phase 2, Kakkanad, Kochi |
-                                                    26/08/2024 - PRESENT</p>
+                                                    <br>26/08/2024 - PRESENT
+                                                </p>
 
 
                                                 <h5> PYTHON, DJANGO - FULL STACK WEB DEVELOPER INTERN</h5>
-                                                <p>Luminar Technohub Kakkand , Kochi, Kerala | 16/10/2023 - 18/04/2024
+                                                <p>Luminar Technohub Kakkand , Kochi, Kerala
+                                                    <br> 16/10/2023 - 18/04/2024
                                                 </p>
 
 
@@ -172,8 +174,9 @@
                                                 <span class="mt-4 mb-2 d-block infoabout__title">COURSES</span>
 
                                                 <h5> Python,Django-Angular FullStack web development</h5>
-                                                <p>Luminar Technolab (Software Training Institute) - Kochi, Kerala |
-                                                    03/2023-09/2023</p>
+                                                <p>Luminar Technolab (Software Training Institute) - Kochi, Kerala
+                                                    <br> 03/2023-09/2023
+                                                </p>
 
 
                                             </div>
@@ -184,10 +187,14 @@
                                                 <span class="mt-4 mb-2 d-block infoabout__title">EDUCATION</span>
 
                                                 <h5> MCA </h5>
-                                                <p>Amity University -India - [01/2026 - Pursuing]</p>
+                                                <p>Amity University -India
+                                                    <br> 01/2026 - Pursuing
+                                                </p>
 
                                                 <h5> Bsc.Physics </h5>
-                                                <p>Unions Christian College -Aluva, Kerala - [07/2018 - 03/2023]</p>
+                                                <p>Unions Christian College -Aluva, Kerala
+                                                    <br> 07/2018 - 03/2023
+                                                </p>
 
 
                                             </div>
@@ -378,6 +385,7 @@
             </svg>
         </div>
         <!-- end service section -->
+
         <!-- portfolio section -->
         <div id="portfoliosection" class="sectionblock">
             <div class="container">
@@ -390,13 +398,35 @@
                             <ul id="filterwrap"
                                 class="warpfilter__filter justify-content-left text-center text-lg-left">
                                 <li data-group="all" class="active">All</li>
+                                <li data-group="django">Django</li>
+                                <li data-group="node">Node JS</li>
 
                             </ul>
                         </div>
                         <!-- end filter portfolio -->
 
                         <div class="container-projects">
-                            <div class="media-box">
+
+                            <div class="media-box" data-group="node">
+                                <div class="carousel">
+                                    <div class="carousel-images">
+                                        <img src="{% static 'asset/project-images/officeTalks1.png' %}"
+                                            alt="Office Talks login page">
+                                        <img src="{% static 'asset/project-images/OfficeTalks2.png' %}"
+                                            alt="Office Talks app preview">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <a style="text-decoration: none;color: black;" href="https://office-talks.vercel.app/"
+                                    target="_blank" rel="noopener noreferrer" class="link">Office Talks</a>
+                                <br>
+                                <a style="text-decoration: underline; color: #555; font-size: 14px;"
+                                    href="https://github.com/syam2400/Chat-Dashboard/blob/main/office-talks-backend/README.md"
+                                    target="_blank" rel="noopener noreferrer">View README</a>
+                            </div>
+
+                            <div class="media-box" data-group="django">
                                 <div class="carousel">
                                     <div class="carousel-images">
                                         <img src="{% static 'asset/project-images/bankapi-1.png' %}"
@@ -416,7 +446,7 @@
                                     class="link">Banking-Api</a>
                             </div>
 
-                            <div class="media-box">
+                            <div class="media-box" data-group="django">
                                 <iframe class="video"
                                     src="https://www.youtube.com/embed/3uR09d8xcKM?si=2izzUAy6bXZOKp__"
                                     title="YouTube video player" frameborder="0"
@@ -427,7 +457,7 @@
                                     href="https://github.com/syam2400/gym-management-application.git">Gym-Management-Application</a>
                             </div>
 
-                            <div class="media-box">
+                            <div class="media-box" data-group="django">
                                 <div class="carousel">
                                     <div class="carousel-images">
                                         <img src="{% static 'asset/project-images/ecom-1.png' %}"
@@ -455,7 +485,7 @@
                             </div>
 
 
-                            <div class="media-box">
+                            <div class="media-box" data-group="django">
                                 <div class="carousel">
                                     <div class="carousel-images">
                                         <img src="{% static 'asset/project-images/ims-1.png' %}"
@@ -484,7 +514,7 @@
 
 
 
-                            <div class="media-box">
+                            <div class="media-box" data-group="django">
                                 <iframe class="video"
                                     src="https://www.youtube.com/embed/RDcKw6C863Q?si=Q-OlrT3oOXRap3Nl"
                                     title="YouTube video player" frameborder="0"
@@ -495,7 +525,7 @@
                                     href="https://github.com/syam2400/Fog-Detection-ML-Django.git">Fog-Detection-Project</a>
                             </div>
 
-                            <div class="media-box">
+                            <div class="media-box" data-group="django">
                                 <div class="carousel">
                                     <div class="carousel-images">
                                         <img src="{% static 'asset/project-images/meter.png' %}"
@@ -520,6 +550,7 @@
         </div>
         </div>
         <!-- end portfolio section -->
+
         <!-- contact section -->
         <div id="contactsection" class="sectionblock">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
